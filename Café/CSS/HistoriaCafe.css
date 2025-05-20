@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    background-color:  #292f33;
+    color:#e5e2d6;
+    font-family: "Ancizar Serif", serif;
+}
+.Logo img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
