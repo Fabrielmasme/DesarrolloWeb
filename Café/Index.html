@@ -1,65 +1,131 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="CSS/Index.css">
-    <title>Inicio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>El Rincón del Café</title>
+  <!-- Bootstrap solo para la navbar -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="CSS/index.css"/>
 </head>
 <body>
     <header>
-        <a href="../Index.html" class="Logo">
-            <img  src="IMG/Logo.png" alt="Logo de la pagina">
-        </a>
-        <nav>
-            <ul>
-                <li><a href="HTML/TiposCafe.html">Tipos de café</a></li>
-                <li><a href="HTML/RecetasPopulares.html">Recetas Populares</a></li>
-                <li><a href="HTML/HistoriaCafe.html">Historia del café</a></li>
-                <li><a href="HTML/Consejos.html">Consejos</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg bg-custom ">
+            <div class="container-fluid">
+
+                <!-- Logo -->
+                <a class="navbar-img" href="index.html">
+                    <img src="IMG/logo.png" alt="Logo del Rincón del Café" class="d-inline-block align-text-top">
+                </a>
+
+                <!-- Botón hamburguesa: visible SOLO cuando está colapsado -->
+                <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse" 
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav" 
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Menú colapsable -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="HTML/recetasPopulares.html">Recetas Populares</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="HTML/tipoCafe.html">Tipos de café</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="HTML/historiaCafe.html">Historia del café</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="HTML/consejos.html">Consejos</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
         </nav>
     </header>
     <main>
-        <p>Bienvenido a "El Rincon Del Café </p>
-        <article class="HeroBanner">
-            <img src="IMG/HeroBanner.png" alt="Persona tomando café">
+        <article class="heroBanner">
+            <section class="heroBanner--Text">
+                <h1>Bienvenido al Rincon del café</h1>
+                <p>Descubre el apasionante mundo del café, desde sus orígenes hasta las mejores recetas y consejos para disfrutarlo al máximo.</p>
+                <button class="heroBanner--Boton">
+                    <a href="HTML/recetasPopulares.html">Explorar Recetas</a>
+                </button>
+            </section>
+            <img src="IMG/Banner.png" alt="Hero Banner del Rincón del Café" class="heroBannerImg">
         </article>
-        <h1>Descubre el arte de preparar un buen Café</h1>
-
-        <article>
-            <a href="HTML/TiposCafe.html" class="TiposDeCafe">Tipos de café</a>
+        <article class="sobreNosotros">  
+            <img class="sobreNosotros--Img" src="IMG/TomandoCafe.png" alt="Sobre Nosotros">
+            <section>
+                <h2>Sobre Nosotros</h2>
+                <p>En El Rincón del Café, somos apasionados del café y queremos compartir contigo todo lo que sabemos sobre esta maravillosa bebida. Desde su historia hasta las mejores recetas, aquí encontrarás todo lo que necesitas para disfrutar de una buena taza de café.</p>
+            </section>
         </article>
-        <article class="ExplicacionDePagina">
-            <p>En este sitio web, te enseñaremos a preparar un buen café, desde la selección de los granos hasta la técnica de preparación. Aprenderás sobre los diferentes métodos de preparación, como la prensa francesa, el espresso y el café filtrado. También te daremos consejos sobre cómo elegir los mejores granos y cómo almacenarlos adecuadamente para mantener su frescura.</p>
-            <p>Además, exploraremos la historia del café y su importancia en diferentes culturas alrededor del mundo. Desde su descubrimiento en Etiopía hasta su popularidad en Europa y América, el café ha sido una bebida apreciada por siglos.</p>
+        <article class="infoPagina">
+            <section>
+                <img src="IMG/cafe-3.png">
+                <h2>Recetas Populares</h2>
+                <p>
+                    Sumérgete en nuestra selección de recetas de café más queridas. Aprende a preparar desde un clásico espresso hasta un cremoso latte o un capuchino espumoso, con instrucciones fáciles y consejos para lograr un sabor perfecto en casa.
+                </p>
+                <button>
+                    <a href="HTML/RecetasPopulares.html">Ver las recetas populares</a>
+                </button>
+            </section>
+            <section>
+                <img src="IMG/Cafe-2.png">
+                <h2>Tipos de café</h2>
+                <p>
+                    Explora la diversidad de cafés del mundo: conoce las variedades de granos, métodos de cultivo y tuestes que dan vida a aromas y sabores únicos. Descubre qué hace especial a un café colombiano, brasileño o etíope, y cómo elegir tu favorito.
+                </p>
+                <button>
+                    <a href="HTML/RecetasPopulares.html">Ver los tipos de café</a>
+                </button>
+            </section>
+            <section>
+                <img src="IMG/Cafe-1.png">
+                <h2>Historia del café</h2>
+                <p>
+                    Viaja en el tiempo y descubre el fascinante origen del café: desde sus legendarias raíces en Etiopía hasta su expansión por Arabia, Europa y América. Conoce cómo esta bebida conquistó culturas y se convirtió en el ritual que hoy disfrutamos.
+                </p>
+                <button class="infoPagina--Boton">
+                    <a href="HTML/RecetasPopulares.html">Ver la historia del café</a>
+                </button>
+            </section>
         </article>
-        
     </main>
     <footer>
-        <article>
-            <section class="NewsLetter">
-                <h2>Suscríbete al NewsLetter</h2>
-                <p>Recibe las últimas noticias y recetas directamente en tu bandeja de entrada.</p>
-                <form action="https://example.com/subscribe" method="POST">
-                    <input type="email" name="email" placeholder="Ingresa tu correo electrónico" required>
-                    <button type="submit">Suscribirse</button>
-                </form>
-            </section>
-            <section class="RedesSociales">
-                <h2>Redes Sociales</h2>
-                <ul>
-                    <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
-                    <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
-                    <li><a href="https://www.twitter.com" target="_blank">Twitter</a></li>
-                </ul>
-
-            </section>
-        </article>      
+        <p>Síguenos en nuestras redes sociales</p>
+        <div class="footer__redes">
+            <a href="#" aria-label="Instagram">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#e5e2d6" viewBox="0 0 24 24">
+                <path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 2 .2 2.5.4.6.2 1 .4 1.4.8.4.4.7.8.8 1.4.2.5.3 1.3.4 2.5.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.2 2-.4 2.5-.2.6-.4 1-.8 1.4-.4.4-.8.7-1.4.8-.5.2-1.3.3-2.5.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-2-.2-2.5-.4-.6-.2-1-.4-1.4-.8-.4-.4-.7-.8-.8-1.4-.2-.5-.3-1.3-.4-2.5C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.2.2-2 .4-2.5.2-.6.4-1 .8-1.4.4-.4.8-.7 1.4-.8.5-.2 1.3-.3 2.5-.4 1.3-.1 1.7-.1 4.9-.1M12 0C8.7 0 8.3 0 7 0 5.7 0 4.7 0 4 0 2.5 0 1.1.3.2.7c-.8.4-1.4 1-1.9 1.9C-.3 4.3 0 5.7 0 7c0 .7 0 1.7 0 3s0 1.6 0 2.9c0 1.3 0 2.3 0 3 .1 1.3.3 2.7.7 3.7.4.9 1 1.5 1.9 1.9.9.4 2.3.7 3.7.7.7 0 1.7 0 3 0s1.6 0 2.9 0c1.3 0 2.3 0 3 .1 1.3-.1 2.7-.3 3.7-.7.9-.4 1.5-1 1.9-1.9.4-.9.7-2.3.7-3.7 0-.7 0-1.7 0-3s0-1.6 0-2.9c0-1.3 0-2.3 0-3-.1-1.3-.3-2.7-.7-3.7-.4-.9-1-1.5-1.9-1.9-.9-.4-2.3-.7-3.7-.7-.7 0-1.7 0-3 0S13.3 0 12 0zm0 5.8A6.2 6.2 0 1 0 12 18a6.2 6.2 0 0 0 0-12.4zm0 10.2a4 4 0 1 1 0-8.1 4 4 0 0 1 0 8.1zm6.4-10.5a1.4 1.4 0 1 1-2.7 0 1.4 1.4 0 0 1 2.7 0z"/>
+            </svg>
+            </a>
+            <a href="#" aria-label="TikTok">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#e5e2d6" viewBox="0 0 24 24">
+                <path d="M16.5 1A4.48 4.48 0 0 0 12 5.5v9.38a2.12 2.12 0 1 1-2.12-2.12A2.14 2.14 0 0 1 11 12V8.85a5.55 5.55 0 1 0 2.15 9.48A5.55 5.55 0 0 0 16 16V7.88a6.55 6.55 0 0 0 5.5 2.87V6.52A3.94 3.94 0 0 1 16.5 1z"/>
+            </svg>
+            </a>
+            <a href="#" aria-label="Facebook">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#e5e2d6" viewBox="0 0 24 24">
+                <path d="M22 12a10 10 0 1 0-11.5 9.87V15h-2v-3h2v-2.3c0-2 1.2-3.1 3-3.1.9 0 1.8.2 1.8.2v2h-1c-1 0-1.3.6-1.3 1.2V12h2.2l-.3 3h-1.9v6.87A10 10 0 0 0 22 12z"/>
+            </svg>
+            </a>
+            <a href="#" aria-label="Twitter">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#e5e2d6" viewBox="0 0 24 24">
+                <path d="M22.46 6c-.77.34-1.6.57-2.46.67a4.3 4.3 0 0 0 1.88-2.38 8.6 8.6 0 0 1-2.72 1.03 4.28 4.28 0 0 0-7.29 3.9A12.13 12.13 0 0 1 3 4.79a4.28 4.28 0 0 0 1.33 5.7 4.27 4.27 0 0 1-1.94-.53v.05a4.28 4.28 0 0 0 3.43 4.2 4.3 4.3 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.97A8.6 8.6 0 0 1 2 19.54a12.14 12.14 0 0 0 6.56 1.92c7.88 0 12.2-6.53 12.2-12.2 0-.19 0-.39-.02-.58A8.72 8.72 0 0 0 22.46 6z"/>
+            </svg>
+            </a>
+        </div>
+        <p class="footer__copy">&copy; 2025 El Rincón del Café. Todos los derechos reservados.</p>
     </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
