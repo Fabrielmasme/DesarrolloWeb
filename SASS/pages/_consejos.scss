@@ -1,0 +1,35 @@
+@use "../abstract/variables" as v;
+@use "../abstract/mixins" as m;
+.consejos-cafe {
+  h1 {
+    font-family: v.$fuente-titulo;
+    color: v.$color-primario;
+  }
+
+  .card {
+    @include m.tarjeta-base;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: lighten(v.$color-fondo, 3%);
+      transform: translateY(-4px);
+    }
+
+    span {
+      color: v.$color-acento;
+    }
+
+    h5 {
+      font-family: v.$fuente-principal;
+      color: v.$color-secundario;
+      margin-bottom: v.$espaciado-pequeno;
+    }
+
+    p {
+      font-size: 0.95rem;
+      color: v.$color-texto;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+@use "../abstract/variables" as vars;
+@mixin transicion-suave {
+  transition: all 0.3s ease-in-out;
+}
+
+@mixin sombra-suave {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+@mixin tarjeta-base {
+  background-color: white;
+  padding: vars.$espaciado-medio;
+  border-radius: 8px;
+  @include sombra-suave;
+}

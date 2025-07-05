@@ -1,0 +1,39 @@
+@use "../abstract/variables" as v;
+@use "../abstract/mixins" as m;
+
+main {
+  h1 {
+    font-family: v.$fuente-titulo;
+    color: v.$color-primario;
+  }
+
+  .receta {
+    @include m.tarjeta-base;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.03);
+    }
+
+    ul {
+      padding-left: 1.2rem;
+      margin-bottom: v.$espaciado-pequeno;
+
+      li {
+        font-size: 0.95rem;
+      }
+    }
+
+    small {
+      display: block;
+      margin-top: v.$espaciado-pequeno;
+      font-style: italic;
+      color: v.$color-acento;
+    }
+
+    .card-body {
+      font-family: v.$fuente-principal;
+      color: v.$color-texto;
+    }
+  }
+}

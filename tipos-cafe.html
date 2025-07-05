@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tipos de Café</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Cultura Café</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+  aria-label="Abrir menú de navegación">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link active" href="#">Tipos</a></li>
+          <li class="nav-item"><a class="nav-link" href="recetas.html">Recetas</a></li>
+          <li class="nav-item"><a class="nav-link" href="historia.html">Historia</a></li>
+          <li class="nav-item"><a class="nav-link" href="consejos.html">Consejos</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- Contenido -->
+  <main class="container my-5 pt-5">
+    <h1 class="mb-4 text-center">Tipos de Café</h1>
+
+    <!-- Galería de tipos -->
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100">
+          <img src="https://source.unsplash.com/400x300/?arabica,coffee" class="card-img-top" alt="Café Arábica">
+          <div class="card-body">
+            <h5 class="card-title">Café Arábica</h5>
+            <p class="card-text">De sabor suave y aromático, representa el 60% de la producción mundial. Se cultiva en altitudes elevadas.</p>
+            <ul>
+              <li>Cuerpo: Medio</li>
+              <li>Acidez: Alta</li>
+              <li>Aroma: Floral y dulce</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100">
+          <img src="https://source.unsplash.com/400x300/?robusta,coffee" class="card-img-top" alt="Café Robusta">
+          <div class="card-body">
+            <h5 class="card-title">Café Robusta</h5>
+            <p class="card-text">Más amargo y con mayor contenido de cafeína. Resistente a plagas, se cultiva en zonas bajas.</p>
+            <ul>
+              <li>Cuerpo: Intenso</li>
+              <li>Acidez: Baja</li>
+              <li>Aroma: Terroso</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100">
+          <img src="https://source.unsplash.com/400x300/?liberica,coffee" class="card-img-top" alt="Café Liberica">
+          <div class="card-body">
+            <h5 class="card-title">Café Liberica</h5>
+            <p class="card-text">Raro y exótico, con sabor ahumado y afrutado. Grano más grande y forma irregular.</p>
+            <ul>
+              <li>Cuerpo: Ligero</li>
+              <li>Acidez: Media</li>
+              <li>Aroma: Frutal y leñoso</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tabla comparativa -->
+    <div class="mt-5">
+      <h2 class="text-center mb-4">Comparativa de Variedades</h2>
+      <div class="table-responsive">
+        <table class="table table-striped text-center">
+          <thead class="table-dark">
+            <tr>
+              <th>Variedad</th>
+              <th>Sabor</th>
+              <th>Acidez</th>
+              <th>Cafeína</th>
+              <th>Cultivo</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Arábica</td>
+              <td>Suave y dulce</td>
+              <td>Alta</td>
+              <td>Media</td>
+              <td>Altura</td>
+            </tr>
+            <tr>
+              <td>Robusta</td>
+              <td>Amargo e intenso</td>
+              <td>Baja</td>
+              <td>Alta</td>
+              <td>Zonas bajas</td>
+            </tr>
+            <tr>
+              <td>Liberica</td>
+              <td>Exótico y afrutado</td>
+              <td>Media</td>
+              <td>Media</td>
+              <td>Tropical</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-4 mt-5">
+    <div class="container">
+      <p>Contacto: contacto@cafecultura.com</p>
+      <p>&copy; 2025 Cultura del Café</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+

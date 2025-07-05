@@ -1,0 +1,181 @@
+@charset "UTF-8";
+.hero {
+  position: relative;
+  background-image: url("../../IMG/Banner.png");
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  width: 100%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 32px;
+}
+.hero .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+.hero .contenido {
+  position: relative;
+  z-index: 2;
+}
+.hero .contenido h1 {
+  font-family: "Georgia", serif;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+.hero .contenido p {
+  font-size: 1.25rem;
+  color: #eee;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
+}
+
+main h1, main h2 {
+  font-family: "Georgia", serif;
+  color: #8B4513;
+}
+main .card {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+main .card:hover {
+  transform: scale(1.02);
+}
+main .card img {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+main .card .card-body {
+  font-family: "Arial", sans-serif;
+  color: #333;
+}
+main .card .card-body ul {
+  padding-left: 1rem;
+}
+main .card .card-body ul li {
+  font-size: 0.95rem;
+}
+main table {
+  background-color: #FFF8DC;
+}
+main table th {
+  background-color: #D2691E;
+  color: white;
+}
+
+main h1 {
+  font-family: "Georgia", serif;
+  color: #8B4513;
+}
+main .receta {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+main .receta:hover {
+  transform: scale(1.03);
+}
+main .receta ul {
+  padding-left: 1.2rem;
+  margin-bottom: 8px;
+}
+main .receta ul li {
+  font-size: 0.95rem;
+}
+main .receta small {
+  display: block;
+  margin-top: 8px;
+  font-style: italic;
+  color: #F4A460;
+}
+main .receta .card-body {
+  font-family: "Arial", sans-serif;
+  color: #333;
+}
+
+.historia-cafe h1, .historia-cafe h2 {
+  font-family: "Georgia", serif;
+  color: #8B4513;
+}
+.historia-cafe ul.timeline {
+  list-style: none;
+  padding-left: 0;
+}
+.historia-cafe ul.timeline li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 8px;
+}
+.historia-cafe ul.timeline li::before {
+  content: "●";
+  position: absolute;
+  left: 0;
+  color: #F4A460;
+}
+.historia-cafe .sombra {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+.historia-cafe ul li {
+  font-size: 1rem;
+  padding-bottom: 6px;
+}
+.historia-cafe .card {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+.historia-cafe .card img {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.historia-cafe .card .card-title {
+  color: #D2691E;
+  font-weight: bold;
+}
+
+.consejos-cafe h1 {
+  font-family: "Georgia", serif;
+  color: #8B4513;
+}
+.consejos-cafe .card {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+.consejos-cafe .card:hover {
+  background-color: rgb(255, 251.06, 235.3);
+  transform: translateY(-4px);
+}
+.consejos-cafe .card span {
+  color: #F4A460;
+}
+.consejos-cafe .card h5 {
+  font-family: "Arial", sans-serif;
+  color: #D2691E;
+  margin-bottom: 8px;
+}
+.consejos-cafe .card p {
+  font-size: 0.95rem;
+  color: #333;
+}
+
+/*# sourceMappingURL=style.css.map */

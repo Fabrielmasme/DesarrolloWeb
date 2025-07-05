@@ -1,0 +1,44 @@
+@use "../abstract/variables" as v;
+@use "../abstract/mixins" as m;
+
+main {
+  h1, h2 {
+    font-family: v.$fuente-titulo;
+    color: v.$color-primario;
+  }
+
+  .card {
+    @include m.tarjeta-base;
+    text-align: left;
+    transition: transform 0.3s ease;
+    
+    &:hover {
+      transform: scale(1.02);
+    }
+
+    img {
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+    }
+
+    .card-body {
+      font-family: v.$fuente-principal;
+      color: v.$color-texto;
+
+      ul {
+        padding-left: 1rem;
+        li {
+          font-size: 0.95rem;
+        }
+      }
+    }
+  }
+
+  table {
+    background-color: v.$color-fondo;
+    th {
+      background-color: v.$color-secundario;
+      color: white;
+    }
+  }
+}
